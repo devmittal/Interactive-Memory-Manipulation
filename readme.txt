@@ -1,0 +1,1 @@
+This program, on execution, first displays a greeting with a range of options from which the user can select. These options are separate functions in different C source files. Currently these functions do not have any functionality and are just dummy files. They have been compiled and linked together using the makefile functionality.
