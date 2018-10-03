@@ -1,27 +1,24 @@
 #include<stdio.h>
-#include"controller.h"
-/*
-#include"allocate.c"
-#include"free.c"
-#include"display.c"
-#include"help.c"
-#include"invblk.c"
-#include"verpatt.c"
-#include"write.c"
-#include"wrpatt.c"*/
+#include"help.h"
+#include"allocate.h"
+#include"display.h"
+#include"free.h"
+#include"invblk.h"
+#include"verpatt.h"
+#include"write.h"
+#include"wrpatt.h"
 
 int main()
 {
 	int response;
-
-	printf("\nMemory Test\n***********\n\nSelect Options Below:\n");
 	
-	do
-	{
-		printf("\nHelp (1)\nAllocate Memory (2)\nFree Memory (3)\nDisplay Memory (4)\n");
-		printf("Write Memory (5)\nInvert Block (6)\nWrite Pattern (7)\n");
-		printf("Verify Pattern (8)\nExit (9)\n\nResponse : ");
+	printf("\n\nWelcome to the Interactive Memory Manipulation");
+	printf("\n**********************************************\n");
 
+	do
+	{		
+		printf("\nEnter 1 for help");
+		printf("\nResponse : ");
 		scanf("%d",&response);
 
 		switch(response)
