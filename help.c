@@ -1,3 +1,12 @@
+/*****************************************************************************
+​ ​* ​ ​ @file​ ​  help.c
+​ * ​ ​ @brief​ ​ This is the help menu which displays to the user what features
+ *	     are available and how to select them.
+​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
+​ * ​ ​ @date​ ​ October 3rd, 2018
+​ * ​ ​ @version​ ​ 1.0
+*****************************************************************************/
+
 #include<stdio.h>
 #include"help.h"
 
