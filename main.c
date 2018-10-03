@@ -1,3 +1,13 @@
+/*****************************************************************************
+​ ​* ​ ​ @file​ ​ main.c
+​ * ​ ​ @brief​ ​ The main function of this program which contains the welcome 
+​ *	     greeting and the function calls for each feature according to
+​ * ​ ​ 	     user input.
+​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
+​ * ​ ​ @date​ ​ October 3rd, 2018
+​ * ​ ​ @version​ ​ 1.0
+*****************************************************************************/
+
 #include<stdio.h>
 #include"help.h"
 #include"allocate.h"
@@ -19,7 +29,7 @@ int main()
 	{		
 		printf("\nEnter 1 for help");
 		printf("\nResponse : ");
-		scanf("%d",&response);
+		scanf("%d",&response); /* User selects which feature is to be implemented here */
 
 		switch(response)
 		{
