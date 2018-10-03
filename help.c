@@ -2,6 +2,7 @@
 ​ ​* ​ ​ @file​ ​  help.c
 ​ * ​ ​ @brief​ ​ This is the help menu which displays to the user what features
  *	     are available and how to select them.
+ *   @Tools_Used GCC
 ​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
 ​ * ​ ​ @date​ ​ October 3rd, 2018
 ​ * ​ ​ @version​ ​ 1.0

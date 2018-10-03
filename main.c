@@ -3,6 +3,7 @@
 ​ * ​ ​ @brief​ ​ The main function of this program which contains the welcome 
 ​ *	     greeting and the function calls for each feature according to
 ​ * ​ ​ 	     user input.
+ *   @Tools_Used GCC
 ​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
 ​ * ​ ​ @date​ ​ October 3rd, 2018
 ​ * ​ ​ @version​ ​ 1.0
