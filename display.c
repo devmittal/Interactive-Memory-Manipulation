@@ -30,7 +30,7 @@ void display_mem(void)
 			printf("\nEnter address index to see contiguous data : ");
 			scanf("%u",&address); /* Accepts the offset value from the starting memory address to display data present in those locations */
 			
-			if(!IsWithinBounds(address)) /* Calls function and checks if the address inputted by user is within bounds */
+			if(!IsWithinBounds(address)) /* Calls function and checks if the address offset inputted by user is within bounds */
 			{
 				printf("\nUnacceptable input, index is out of bounds!\n"); 
 				printf("1-to enter again and 0-ignore : ");
