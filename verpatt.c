@@ -15,6 +15,7 @@
 #include<time.h>
 #include"allocate.h"
 #include"wrpatt.h"
+#include"verpatt.h"
 
 void verify_pattern(void)
 {

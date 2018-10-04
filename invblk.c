@@ -12,6 +12,7 @@
 #include<stdio.h>
 #include<time.h>
 #include"allocate.h"
+#include"invblk.h"
 
 void invert_block(void)
 {

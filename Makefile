@@ -29,3 +29,6 @@ verpatt.o: verpatt.c allocate.h wrpatt.h verpatt.h
 clean:  
 	rm prog *.o
 
+test: prog testfile
+	./prog < testfile
+

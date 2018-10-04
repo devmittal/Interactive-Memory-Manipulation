@@ -10,6 +10,7 @@
 
 #include<stdio.h>
 #include"allocate.h"
+#include"write.h"
 
 void write_mem(void)
 {

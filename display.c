@@ -10,6 +10,7 @@
 
 #include<stdio.h>
 #include"allocate.h"
+#include"display.h"
 
 void display_mem(void)
 {

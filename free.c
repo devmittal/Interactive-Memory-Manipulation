@@ -10,6 +10,7 @@
 
 #include<stdio.h>
 #include"allocate.h"
+#include"free.h"
 
 void free_mem(void)
 {
