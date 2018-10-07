@@ -18,3 +18,5 @@
  */
 
 void display_mem(void);
+void display_direct(void);
+void display_offset(void);

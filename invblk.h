@@ -19,3 +19,5 @@
  */
 
 void invert_block(void);
+void invert_offset(void);
+void invert_direct(void);

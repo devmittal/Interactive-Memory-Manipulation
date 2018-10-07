@@ -17,6 +17,9 @@ free.o: free.c allocate.h free.h
 display.o: display.c allocate.h display.h
 	cc -c display.c
 
+invblk.o: invblk.c invblk.h allocate.h
+	cc -c invblk.c
+
 write.o: write.c allocate.h write.h
 	cc -c write.c
 
