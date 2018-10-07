@@ -4,7 +4,7 @@
  *	     blocks. It also does the bound checking for future read and write 
  *	     operations.
  *   @Tools_Used GCC
-​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
+​ * ​ ​ @author​ ​Souvik De, Devansh Mittal
 ​ * ​ ​ @date​ ​ October 3rd, 2018
 ​ * ​ ​ @version​ ​ 1.0
 *****************************************************************************/

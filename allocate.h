@@ -5,7 +5,7 @@
  * 	     It also contains the declaration of the pointer used to point to
  *	     the memory allocated. 
  *   @Tools_Used GCC
-​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
+​ * ​ ​ @author​ ​Souvik De, Devansh Mittal
 ​ * ​ ​ @date​ ​ October 3rd, 2018
 ​ * ​ ​ @version​ ​ 1.0
 *****************************************************************************/

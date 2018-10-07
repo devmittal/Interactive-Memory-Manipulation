@@ -4,7 +4,7 @@
  * 	     specified by the user. It also measures the amount of time taken
  *	     to carry out the invert operation.
  *   @Tools_Used GCC
-​ * ​ ​ @author​ ​Devansh Mittal, Souvik De
+​ * ​ ​ @author​ ​​Souvik De, Devansh Mittal
 ​ * ​ ​ @date​ ​ October 3rd, 2018
 ​ * ​ ​ @version​ ​ 1.0
 *****************************************************************************/
