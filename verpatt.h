@@ -20,3 +20,6 @@
  */
 
 void verify_pattern(void);
+void verpatt_offset(void);
+void verpatt_direct(void);
+

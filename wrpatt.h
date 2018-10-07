@@ -32,4 +32,7 @@ void write_pattern(void);
 ​ * ​ ​ @return Returns unsigned 32 bit pattern generated
  */
 
+void wrpatt_offset(void);
+void wrpatt_direct(void);
 uint32_t generate_pattern(uint32_t seed);
+

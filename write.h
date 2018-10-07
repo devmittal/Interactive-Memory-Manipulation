@@ -18,3 +18,5 @@
  */
 
 void write_mem(void);
+void write_offset(void);
+void write_direct(void);
