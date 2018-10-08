@@ -13,7 +13,7 @@
 #define BASE (4060285952) /* Constant value defined which is needed for pattern generation. */
 
 /**
-​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the addresses specified by the 
+​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the address/offset and consecutive blocks specified by the 
  * 	     user. Time taken to carry out this pattern generation is also 
  *	     calculated.
  *
@@ -25,6 +25,30 @@
 void write_pattern(void);
 
 /**
+​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the address offset and consecutive blocks specified by the 
+ * 	     user. Time taken to carry out this pattern generation is also 
+ *	     calculated.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
+
+void wrpatt_offset(void);
+
+/**
+​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the addresse and consecutive blocks specified by the 
+ * 	     user. Time taken to carry out this pattern generation is also 
+ *	     calculated.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
+
+void wrpatt_direct(void);
+
+/**
 ​ * ​ ​ @brief​ ​ Contains algorithm to generate pseudo random pattern.
 ​ *
  * ​ ​ @param​ ​ Seed value needed for pseudo random generation
@@ -32,7 +56,5 @@ void write_pattern(void);
 ​ * ​ ​ @return Returns unsigned 32 bit pattern generated
  */
 
-void wrpatt_offset(void);
-void wrpatt_direct(void);
 uint32_t generate_pattern(uint32_t seed);
 

@@ -108,11 +108,11 @@ void wrpatt_direct(void)
 	clock_t BeginCapture,EndCapture;
 
 	do
-	{
+	{	/* Accepts the offset value from the starting memory address to write random pattern to */
 		printf("\nEnter address to write pattern : ");
 		scanf("%lu",&address);
 
-		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t);
+		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t); //Direct address scaled to fit the offset bound check func
 		
 		if(!IsWithinBounds(direct_offset))
 		{
@@ -138,22 +138,22 @@ void wrpatt_direct(void)
 	while(!IsWithinBounds((direct_offset + num_blocks -1) && choice));
 
 	printf("\nEnter the seed value for pattern generation : ");
-		scanf("%u",&seed); /* Accepts seed value from user for pseudo random pattern generation */
+	scanf("%u",&seed); /* Accepts seed value from user for pseudo random pattern generation */
 
-		BeginCapture = clock(); /* Start clock timer */
-		for(parser = direct_offset ; parser < direct_offset + num_blocks ; parser++)
-		{
-						 
-			*(memory + parser) = generate_pattern(seed); /* Call function to generate random pattern */
-			seed = *(memory + parser); /* The seed value for random pattern for the next word is the random pattern of the previous word */
-		}
-		EndCapture = clock(); /* End clock timer */
-		
-		printf("\nPattern was successfully generated in %f secs\n",(double)(EndCapture-BeginCapture)/CLOCKS_PER_SEC);
-		/**
-		* In the above calculation, the difference provides us with the number of clock ticks elapsed. To get time taken in
-		* seconds, we divide it by the number of clock ticks per second which depends on the system.
-		*/	
+	BeginCapture = clock(); /* Start clock timer */
+	for(parser = direct_offset ; parser < direct_offset + num_blocks ; parser++)
+	{
+					 
+		*(memory + parser) = generate_pattern(seed); /* Call function to generate random pattern */
+		seed = *(memory + parser); /* The seed value for random pattern for the next word is the random pattern of the previous word */
+	}
+	EndCapture = clock(); /* End clock timer */
+	
+	printf("\nPattern was successfully generated in %f secs\n",(double)(EndCapture-BeginCapture)/CLOCKS_PER_SEC);
+	/**
+	* In the above calculation, the difference provides us with the number of clock ticks elapsed. To get time taken in
+	* seconds, we divide it by the number of clock ticks per second which depends on the system.
+	*/	
 }
 
 uint32_t generate_pattern(uint32_t seed)

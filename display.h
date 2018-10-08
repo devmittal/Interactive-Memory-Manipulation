@@ -10,7 +10,8 @@
 *****************************************************************************/
 
 /**
-​ * ​ ​ @brief​ ​ Displays the data present in the addresses selected by the user.
+​ * ​ ​ @brief​ ​ Displays the data present in the memory using the addresses/ offset and number of block
+ *           as selected by the user.
  *
 ​ * ​ ​ @param​ ​ void
 ​ *
@@ -18,5 +19,21 @@
  */
 
 void display_mem(void);
+
+/**
+​ * ​ ​ @brief​ ​ Displays the data present in the memory using addresses and no. of block selected by the user.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
 void display_direct(void);
+
+/**
+​ * ​ ​ @brief​ ​ Displays the data present in the memory using addresses offset and no. of block selected by the user.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
 void display_offset(void);

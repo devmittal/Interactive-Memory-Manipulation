@@ -26,7 +26,7 @@ void invert_block(void)
 	{
 		printf("\n\nInvert Block :");
 		printf("\n**************");
-
+		//Select addressing mode
 		printf("\n1 - Offset Addressing\n2 - Direct Addressing");
 		printf("\nMode : ");
 		scanf("%hhu",&mode);
@@ -52,11 +52,11 @@ void invert_offset(void)
 	clock_t BeginCapture,EndCapture;
 
 	do
-	{
+	{	//Input starting address offset to invert memory 
 		printf("\nProvide address index to invert memory bits (starts from '0') : ");
 		scanf("%lu",&address);
 
-		if(!IsWithinBounds(address))
+		if(!IsWithinBounds(address))	//Check bounds and ignore if requested by user
 		{
 			printf("\nUnacceptable input, index is out of bounds!\n");
 			printf("1-to enter again and 0-ignore : ");
@@ -67,7 +67,7 @@ void invert_offset(void)
 
 	do
 	{		
-		printf("\nHow many words would you like to invert? ");
+		printf("\nHow many words would you like to invert? "); //Get number of blocks to invert
 		scanf("%u",&num_blocks);
 
 		if(!IsWithinBounds(address + num_blocks - 1))
@@ -79,10 +79,10 @@ void invert_offset(void)
 	}
 	while(!IsWithinBounds(address + num_blocks - 1) && choice);
 		
-	BeginCapture = clock();
+	BeginCapture = clock();	//Capture time taken to execute invertion of memory
 	for(parser = address ; parser < address + num_blocks ; parser++)
 	{
-		*(memory + parser) ^= 4294967295;
+		*(memory + parser) ^= 4294967295;	//Each Memory blockin range inverted by XOR'ing with 0xFFFFFFFF
 	}
 	EndCapture = clock();
 		
@@ -97,13 +97,13 @@ void invert_direct(void)
 	clock_t BeginCapture,EndCapture;
 
 	do
-	{
+	{	//Input starting address to invert memory blocks
 		printf("\nProvide address to invert memory bits : ");
 		scanf("%lu",&address);
 
-		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t);
+		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t); //Address scaled to fit same bound check function
 
-		if(!IsWithinBounds(direct_offset))
+		if(!IsWithinBounds(direct_offset)) //Check if out of bounds
 		{
 			printf("\nUnacceptable input, index is out of bounds!\n");
 			printf("1-to enter again and 0-ignore : ");
@@ -125,11 +125,12 @@ void invert_direct(void)
 		}
 	}
 	while(!IsWithinBounds(direct_offset + num_blocks - 1) && choice);
-		
+	
+	//Capture time taken to execute invertion of memory
 	BeginCapture = clock();
 	for(parser = direct_offset ; parser < direct_offset + num_blocks ; parser++)
 	{
-		*(memory + parser) ^= 4294967295;
+		*(memory + parser) ^= 4294967295; 	//Each Memory blockin range inverted by XOR'ing with 0xFFFFFFFF
 	}
 	EndCapture = clock();
 

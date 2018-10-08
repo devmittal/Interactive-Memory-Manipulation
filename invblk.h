@@ -9,9 +9,8 @@
 *****************************************************************************/
 
 /**
-​ * ​ ​ @brief​ ​ Inverts the data bits present at the addresses specified by the
- *	     user. It also measures the amount of time taken to carry out the
- *	     invert operation.
+​ * ​ ​ @brief​ ​ Inverts the data bits spannig the addresses/offset and blocks as specified by the
+ *	     user.
  *
 ​ * ​ ​ @param​ ​ void
 ​ *
@@ -19,5 +18,25 @@
  */
 
 void invert_block(void);
+
+/**
+​ * ​ ​ @brief​ ​ Inverts the data bits in memory as per the addresses offset and no. of blocks specified by the
+ *	     user. It also measures the amount of time taken to carry out the
+ *	     invert operation.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
 void invert_offset(void);
+
+/**
+​ * ​ ​ @brief​ ​ Inverts the data bits in memory as per the addresses and no. of blocks specified by the
+ *	     user. It also measures the amount of time taken to carry out the
+ *	     invert operation.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
 void invert_direct(void);

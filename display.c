@@ -25,7 +25,7 @@ void display_mem(void)
 		printf("\n\nDisplay Memory :");
 		printf("\n ****************");
 
-		printf("\n1 - Offset Addressing\n2 - Direct Addressing");
+		printf("\n1 - Offset Addressing\n2 - Direct Addressing");	//Select Addressing Mode
 		printf("\nMode : ");
 		scanf("%hhu",&mode);
 		
@@ -49,12 +49,12 @@ void display_offset(void)
 	uint64_t address = 0;
 	unsigned char choice = 0;
 
-	do
+	do	//Input offset in bounds to view data
 	{
 		printf("\nEnter address index to see contiguous data : ");
 		scanf("%lu",&address);
 		
-		if(!IsWithinBounds(address))
+		if(!IsWithinBounds(address))	//Warn and allow to ignore in case entry is out of bounds
 		{
 			printf("\nUnacceptable input, index is out of bounds!\n");
 			printf("1-to enter again and 0-ignore : ");
@@ -77,6 +77,7 @@ void display_offset(void)
 	}
 	while(!IsWithinBounds(address + num_blocks - 1) && choice);
 	
+	//Display data in tabular format
 	printf("\nIndex\tAddress \tData");
 	printf("\n_____\t_______ \t____\n");
 
@@ -96,10 +97,10 @@ void display_direct(void)
 
 	do
 	{
-		printf("\nEnter address to see contiguous data : ");
+		printf("\nEnter address to see contiguous data : ");	//Input address to see data
 		scanf("%lu",&address);
 
-		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t);
+		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t);	//Address scaled to fit the offset bound check func.
 		
 		if(!IsWithinBounds(direct_offset))
 		{

@@ -26,7 +26,7 @@ void verify_pattern(void)
 		printf("\nFirst allocate memory...!\n");
 	}
 	else
-	{
+	{ //Select addressing mode
 		printf("\n\nVerify Pattern :");
 		printf("\n**************");
 		
@@ -126,7 +126,7 @@ void verpatt_direct(void)
 	clock_t BeginCapture,EndCapture;
 
 	do
-	{
+	{/* Accepts the starting memory address to verify random pattern */
 		printf("\nEnter address to verify pattern : ");
 		scanf("%lu",&address);
 

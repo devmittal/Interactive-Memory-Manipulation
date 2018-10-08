@@ -9,6 +9,28 @@
 *****************************************************************************/
 
 /**
+​ * ​ ​ @brief​ ​ Writes hexadecimal data to the address/offset as specified
+ *	     by the user.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
+
+void write_mem(void);
+
+/**
+​ * ​ ​ @brief​ ​ Writes hexadecimal data specified by the user to the address 
+ *	     offset selected by the user.
+ *
+​ * ​ ​ @param​ ​ void
+​ *
+​ * ​ ​ @return void
+ */
+
+void write_offset(void);
+
+/**
 ​ * ​ ​ @brief​ ​ Writes hexadecimal data specified by the user to the address 
  *	     selected by the user.
  *
@@ -17,6 +39,4 @@
 ​ * ​ ​ @return void
  */
 
-void write_mem(void);
-void write_offset(void);
 void write_direct(void);

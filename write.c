@@ -24,7 +24,7 @@ void write_mem(void)
 	{
 		printf("\n\nWrite Memory :");
 		printf("\n**************");
-
+		//Select addressing mode
 		printf("\n1 - Offset Addressing\n2 - Direct Addressing");
 		printf("\nMode : ");
 		scanf("%hhu",&mode);
@@ -65,7 +65,7 @@ void write_offset(void)
 
 		printf("Enter data (in hexadecimal) to modify index-%lu : ",address);
 		scanf("%X",&data); /* Accepts data in hexadecimal from user */
-		*(memory + address) = data; /* Writes the data to offset value from the starting allocated memory address */
+		*(memory + address) = data; /* Writes the data to the memory offset as specified by user */
 		printf("\nData successfully written to buffer\n");
 }
 
@@ -76,7 +76,7 @@ void write_direct(void)
 	unsigned char choice = 0;
 
 	do
-	{
+	{	//Get memory address to write at
 		printf("\nProvide address to modify buffer : ");
 		scanf("%lu",&address);
 
@@ -92,7 +92,7 @@ void write_direct(void)
 	while(!IsWithinBounds(direct_offset) && choice);
 
 	printf("\nEnter data (in hexadecimal) to modify address-%lu : ",address);
-		scanf("%X",&data); /* Accepts data in hexadecimal from user */
-		*(memory + direct_offset) = data; /* Writes the data to offset value from the starting allocated memory address */
-		printf("\nData successfully written to buffer\n");
+	scanf("%X",&data); /* Accepts data in hexadecimal from user */
+	*(memory + direct_offset) = data; /* Writes data to the address specified by user */
+	printf("\nData successfully written to buffer\n");
 }
