@@ -37,10 +37,10 @@ void verpatt_offset(void);
 
 /**
 ​ * ​ ​ @brief​ ​ Verifies the pseudo random pattern at the addresses specified by
- *	     the user using specific memory adrress and blocks specified by the user.
- *           If it is not verified, it displays a table of address,
- *	     present value and expected value. Otherwise, the time taken to 
- *	     carry out this pattern verification is calculated.
+ *	     the user using specific memory adrEess and blocks specified by the user.
+ *           If it is not verified, it displays a table of address, Present value and
+ *	     expected value. Otherwise, the time taken to carry out this pattern 
+ *	     verification is calculated.
  *
 ​ * ​ ​ @param​ ​ void
 ​ *

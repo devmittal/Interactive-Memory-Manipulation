@@ -112,7 +112,7 @@ void wrpatt_direct(void)
 		printf("\nEnter address to write pattern : ");
 		scanf("%lu",&address);
 
-		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t); //Direct address scaled to fit the offset bound check func
+		direct_offset = (address - (unsigned long)memory)/sizeof(uint32_t); /* Direct address scaled to fit the offset bound check func */
 		
 		if(!IsWithinBounds(direct_offset))
 		{

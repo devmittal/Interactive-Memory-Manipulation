@@ -24,7 +24,7 @@ void write_mem(void)
 	{
 		printf("\n\nWrite Memory :");
 		printf("\n**************");
-		//Select addressing mode
+		/* Select addressing mode */
 		printf("\n1 - Offset Addressing\n2 - Direct Addressing");
 		printf("\nMode : ");
 		scanf("%hhu",&mode);
@@ -76,7 +76,7 @@ void write_direct(void)
 	unsigned char choice = 0;
 
 	do
-	{	//Get memory address to write at
+	{	/* Get memory address to write at */
 		printf("\nProvide address to modify buffer : ");
 		scanf("%lu",&address);
 

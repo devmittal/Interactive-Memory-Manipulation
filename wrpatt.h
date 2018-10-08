@@ -14,8 +14,7 @@
 
 /**
 ​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the address/offset and consecutive blocks specified by the 
- * 	     user. Time taken to carry out this pattern generation is also 
- *	     calculated.
+ * 	     user. Time taken to carry out this pattern generation is also calculated.
  *
 ​ * ​ ​ @param​ ​ void
 ​ *
@@ -26,8 +25,7 @@ void write_pattern(void);
 
 /**
 ​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the address offset and consecutive blocks specified by the 
- * 	     user. Time taken to carry out this pattern generation is also 
- *	     calculated.
+ * 	     user. Time taken to carry out this pattern generation is also calculated.
  *
 ​ * ​ ​ @param​ ​ void
 ​ *
@@ -37,9 +35,8 @@ void write_pattern(void);
 void wrpatt_offset(void);
 
 /**
-​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the addresse and consecutive blocks specified by the 
- * 	     user. Time taken to carry out this pattern generation is also 
- *	     calculated.
+​ * ​ ​ @brief​ ​ writes a pseudo random pattern to the address and consecutive blocks specified by the 
+ * 	     user. Time taken to carry out this pattern generation is also calculated.
  *
 ​ * ​ ​ @param​ ​ void
 ​ *
